@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Faborite Books</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/book.css" />
+</head>
+
+<body>
+    <header>
+        <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-white">About</h4>
+                        <p class="text-muted">
+                            Add some information about the album below, the author, or any
+                            other background context. Make it a few sentences long so folks
+                            can pick up some informative tidbits. Then, link them off to
+                            some social networking sites or contact information.
+                        </p>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <h4 class="text-white">Contact</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                            <li><a href="#" class="text-white">Like on Facebook</a></li>
+                            <li><a href="#" class="text-white">Email me</a></li>
+                            <li><button id="btn_logout">로그아웃</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container d-flex justify-content-between">
+                <a href="/" class="navbar-brand d-flex align-items-center">
+                    <strong>My Faborite Books</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main role="main">
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">Book example</h1>
+                <p class="lead text-muted">
+                    This project is an example for beginners studying JavaScript.<br />
+                    You can add your favorite book and check it out of the list.<br />
+                    You can delete or modify the book that you add.
+                </p>
+                <p>
+                    <a href="/add" class="btn btn-primary my-2">Add Book</a>
+                </p>
+            </div>
+        </section>
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div id="detail"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-muted">
+        <div class="container">
+            <p class="float-right">
+                <a href="#">Back to top</a>
+            </p>
+            <p>
+                Album example is &copy; Bootstrap, but please download and customize
+                it for yourself!
+            </p>
+            <p>
+                New to Bootstrap?
+                <a href="https://getbootstrap.com/">Visit the homepage</a> or read our
+                <a href="/docs/4.3/getting-started/introduction/">getting started guide</a>.
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/book.js"></script>
+</body>
+
+</html>
